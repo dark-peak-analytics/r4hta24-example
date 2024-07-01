@@ -77,9 +77,8 @@ m_P["S2", ]   <- c(0, 0, 1 - p_S2D, p_S2D)
 m_P["D", ] <- c(0, 0, 0, 1)
 
 # check rows add up to 1
-rowSums(m_P)
 m_P
-# assertHE::check_trans_prob_mat(m_P)
+assertHE::check_trans_prob_mat(m_P, confirm_ok = T)
 
 
 ## @knitr stm_1_trace
